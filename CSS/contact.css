@@ -1,0 +1,90 @@
+.box h3, .box a {
+    font-size: 20px;
+}
+
+.box p {
+    margin:20px 40px;
+}
+
+.inquiry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 16px;
+}
+.inquiry div {
+	text-align: center;
+}
+.inquiry a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Form */
+.c-form {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.c-form_item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+.c-form_label,
+.c-form_input {
+	padding: 10px;
+	font-size: 16px;
+}
+.c-form_label {
+	width: 90%;
+}
+.c-form_input {
+	width: 90%;
+	font-size: 16px;
+	border: solid 1px #333;
+	border-radius: 4px;
+}
+.c-form_input:focus-visible {
+	outline: var(--color-extra) auto 0.5px;
+}
+.c-form_required {
+	color: #fff;
+	background-color: var(--color-primary);
+	border-radius: 4px;
+	padding: 5px 5px;
+	margin: 0 0 0 18px;
+	font-size: 12px;
+}
+textarea.c-form_input {
+	height: 160px;
+}
+.c-form_submit {
+	text-align: center;
+}
+.c-form_submit button {
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	background-color: var(--color-extra2);
+	border: solid 1px var(--color-extra2);
+	border-radius: 4px;
+	padding: 5px 32px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+.c-form_submit button:hover {
+	color: var(--color-extra2);
+	background-color: transparent;
+}
+
+@media (min-width: 640px) {
+	.c-form_item {
+		flex-wrap: nowrap;
+	}
+	.c-form_label {
+		width: 40%;
+	}
+	.c-form_input {
+		width: 55%;
+	}
+}

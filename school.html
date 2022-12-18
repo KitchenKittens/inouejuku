@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/sanitize.css">
+    <link rel="stylesheet" href="./CSS/root.css">
+    <link rel="stylesheet" href="./CSS/school.css">
+    <title>入塾案内</title>
+</head>
+  <body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <div class="navbar-container">        
+            <div class="navbar-logo">
+                <a href="index.html">
+                    <img src="img/owl.jpg" alt="Logo">
+                </a>
+            </div>
+            
+            <ul class="navigation">
+                <li><a href="index.html">ホーム</a>
+                    <div class="dropdown">
+                        <div class="dd">
+                        <a href="index.html#Welcome" class="dd=list">ようこそ</a>
+                        <a href="index.html#Describe" class="dd=list">「芯を作る」</a>
+                        <a href="index.html#Parents" class="dd=list">保護者の方へ</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="school.html">入塾案内</a>
+                    <div class="dropdown">
+                        <div class="dd">
+                        <a href="school.html#Course" class="dd=list">コース紹介</a>
+                        <a href="school.html#Entry" class="dd=list">入塾までの流れ</a>
+                        <a href="school.html#Teacher" class="dd=list">講師紹介</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="grad.html">進学実績</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="map.html">アクセス</a></li>
+                <li><a href="https://inouejuku81213.blog.fc2.com/" target="_blank">ブログ</a></li> 
+                <!-- ブログは別タブで直接開ける-->
+            </ul>
+       
+            <div class="tel">
+                <li class="telephone">
+                    <a href="tel:0774983835"><img src="img/phone.svg" alt="tel">0774-98-3835</a>
+                </li>
+                <li class="email">
+                    <a href="mailto: inouejuku81213@gmail.com"><img src="img/mail.svg" alt="mail">inouejuku81213@gmail.com</a>
+                </li>
+            </div>
+
+    <!-- Hamburger Menu-->
+            <button type="button" class="hamburger" id="menu-btn">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+            </button>
+        </div> 
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="school.html">入塾案内</a></li>
+            <li><a href="grad.html">進学実績</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="map.html">アクセス</a></li>
+            <li><a href="https://inouejuku81213.blog.fc2.com/" target="_blank">ブログ</a></li> 
+            <!-- ブログは別タブで直接開ける-->
+        </ul>
+        <div class="mobile-menu-bottom">
+            <div>
+                <img src="img/phone.svg" alt="tel">
+                <span><a href="tel:0774983835">0774-98-3835</a></span>
+            </div>
+            <div>
+                <img src="img/mail.svg" alt="mail">
+                <a href="mailto: inouejuku81213@gmail.com">inouejuku81213@gmail.com</a>
+            </div>
+        </div>    
+    </div>
+
+<section>
+<!-- Box A -->
+    <div class="box course-info" id="Course">
+        <div class="course-title">
+        <h2>
+            コース紹介
+        </h2>
+        <div class="scenes">
+            <div><img src="img/owl.jpg" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
+            <div><img src="img/recipe.jpg" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
+            <div><img src="img/owl.jpg" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow"></div>
+            <div><img src="img/recipe.jpg" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow"></div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img src="img/owl.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="img/recipe.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="img/owl.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="img/recipe.jpg">
+                </div>
+            </div>
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+       
+
+        </div>
+
+        <div>
+            <h3>
+                集団授業コース
+            </h3>
+            <p>
+                京都府には五ツ木偏差値60～65の範囲に入る公立高校がほとんどありません。<br>だからといって、無茶な勉強をして届いたとしても、進学後に不安を残します。<br>卒業生たちの進路はさまざまですが、夢や幸せに向かって進む彼らの姿を見ていると、どこの高校に進んだのかは、それほど重要ではない。その思いは年々強くなります。<br>大事なことは、少しでも上に行くことではなく、目指す過程で、見て、学び、得たものです。<br>授業で学び、自習で身につけ、余力を残して進学する。これを指導の要としています。
+            </p>
+                <div class="group-btns">
+                    <button onclick="location.href='course-info.html#grad1-3'">中1～３年生対象</button>
+                    <button onclick="location.href='course-info.html#nankan'">難関高校受験指導</button>
+                    <button onclick="location.href='course-info.html#1class'">一学年一クラス</button>
+                    <button onclick="location.href='course-info.html#tesuto'">定期テスト対策</button>
+                    <button onclick="location.href='course-info.html#goodexp'">良い成績は良い解説から</button>
+                    <button onclick="location.href='course-info.html#check'">チェックをつけて繰り返す</button>
+                    <button onclick="location.href='course-info.html#howtousetime'">中1中2で時間の使い方を</button>
+                    <button onclick="location.href='course-info.html#afterex'">中3の秋、部活動引退後にめざましく伸びる</button>
+                    <button onclick="location.href='course-info.html#effort'">ひたむきな努力はきっと実を結ぶ</button>
+                </div>
+        </div>
+        
+        <br>
+
+        <div>
+            <h3>
+                個別指導コース
+            </h3>
+            <p>
+                [説明]
+            </p>
+            <p>
+                京都府には五ツ木偏差値60～65の範囲に入る公立高校がほとんどありません。<br>だからといって、無茶な勉強をして届いたとしても、進学後に不安を残します。<br>卒業生たちの進路はさまざまですが、夢や幸せに向かって進む彼らの姿を見ていると、どこの高校に進んだのかは、それほど重要ではない。その思いは年々強くなります。<br>大事なことは、少しでも上に行くことではなく、目指す過程で、見て、学び、得たものです。<br>授業で学び、自習で身につけ、余力を残して進学する。これを指導の要としています。
+            </p>
+                
+        </div>
+
+        <br>
+
+        <div>
+            <h3>
+                自習サポートコース
+            </h3>
+            <p>
+                [説明]
+            </p>
+        </div>
+
+
+    </div>
+    
+<!-- Box B-->
+    <div class="box register" id="Entry">
+        <div class="sub">
+            <h2>入塾までの流れ</h2>
+        </div>
+
+        <div class="info">
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente ipsa dolore aspernatur veniam modi doloremque eos itaque, porro in beatae labore minus, odit magnam necessitatibus molestiae quo, ad sit nesciunt.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat atque voluptas voluptate fugit alias laudantium. Vel dolores quaerat est voluptatibus corporis voluptates doloremque provident, placeat delectus velit ab magni perspiciatis.</p>
+        </div>
+        
+        <div class="form">
+            <a href="contact.html#Form">お問い合わせはこちら</a>
+        </div>
+
+    </div>
+    
+<!-- Box C-->
+<div class="box teachers" id="Teacher">
+    <div class="introduction">
+        <div class="names">
+            <img src="img/owl.jpg" alt="">
+            <h3>井上　崇</h3>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptatem eveniet esse natus blanditiis, aspernatur quis omnis repellendus, officiis sunt quos sapiente unde mollitia. Autem mollitia maiores animi itaque repellat.</p>
+        </div>
+    </div>
+    <div class="class-photo">
+        <img src="img/recipe.jpg" alt="">
+    </div>
+</div>
+
+</section>
+<div class="return">
+    <a href="#">ページ上部に戻る</a>
+</div>
+
+<div class="divider"></div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="contacts">
+            <img src="img/phone.svg" alt="tel">
+            <a href="tel:0774983835">0774-98-3835</a>
+            <img src="img/mail.svg" alt="mail">
+            <a href="mailto: inouejuku81213@gmail.com">inouejuku81213@gmail.com</a>
+        </div>
+        <p>Copyright &copy; 2002-<script>document.write( new Date().getFullYear() );</script>  井上塾. All rights reserved.</p>
+    </div>
+</footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--自作のJS-->
+    <script src="script.js"></script>
+    
+</body>
+</html>

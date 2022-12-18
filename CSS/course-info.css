@@ -1,0 +1,65 @@
+.group div div {
+    margin: 20px 40px;
+}
+
+.group div h3{
+    padding-top: 20px;
+}
+
+.border{
+	border: 0.3px dashed;
+	margin: 5px 0;
+	padding: 0 10px;
+}
+
+/* Animation */
+:target {
+	-webkit-animation: target-fade 2s;
+	-moz-animation: target-fade 2s;
+	-o-animation: target-fade 2s;
+	animation: target-fade 2s;
+}
+
+@-webkit-keyframes target-fade {
+	from { background-color: var(--color-secondary); } /* [1] */
+	to { background-color: transparent; }
+}
+@-moz-keyframes target-fade {
+	from { background-color: var(--color-secondary); } /* [1] */
+	to { background-color: transparent; }
+}
+@-o-keyframes target-fade {
+	from { background-color: var(--color-secondary); } /* [1] */
+	to { background-color: transparent; }
+}
+@keyframes target-fade {
+	from { background-color: var(--color-secondary); } /* [1] */
+	to { background-color: transparent; }
+}
+
+/* Charts & Graphs */
+.table {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.table table {
+	margin: 14px auto;
+	border: 1px gray solid;
+	height: 100px;
+}
+
+.table tr {
+	color: white;
+	padding: 6px 8px;
+	border: 1px gray solid;
+	background-color: var(--color-secondary);
+}
+
+.table td {
+	padding: 6px 8px;
+	border: 1px gray solid;
+}
+
+.table img{
+	height: 300px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/sanitize.css">
+    <link rel="stylesheet" href="./CSS/root.css">
+    <link rel="stylesheet" href="./CSS/map.css">
+    <title>アクセス</title>
+</head>
+  <body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <div class="navbar-container">        
+            <div class="navbar-logo">
+                <a href="index.html">
+                    <img src="img/owl.jpg" alt="Logo">
+                </a>
+            </div>
+            
+            <ul class="navigation">
+                <li><a href="index.html">ホーム</a>
+                    <div class="dropdown">
+                        <div class="dd">
+                        <a href="index.html#Welcome" class="dd=list">ようこそ</a>
+                        <a href="index.html#Describe" class="dd=list">「芯を作る」</a>
+                        <a href="index.html#Parents" class="dd=list">保護者の方へ</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="school.html">入塾案内</a>
+                    <div class="dropdown">
+                        <div class="dd">
+                        <a href="school.html#Course" class="dd=list">コース紹介</a>
+                        <a href="school.html#Entry" class="dd=list">入塾までの流れ</a>
+                        <a href="school.html#Teacher" class="dd=list">講師紹介</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="grad.html">進学実績</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="map.html">アクセス</a></li>
+                <li><a href="https://inouejuku81213.blog.fc2.com/" target="_blank">ブログ</a></li> 
+                <!-- ブログは別タブで直接開ける-->
+            </ul>
+       
+            <div class="tel">
+                <li class="telephone">
+                    <a href="tel:0774983835"><img src="img/phone.svg" alt="tel">0774-98-3835</a>
+                </li>
+                <li class="email">
+                    <a href="mailto: inouejuku81213@gmail.com"><img src="img/mail.svg" alt="mail">inouejuku81213@gmail.com</a>
+                </li>
+            </div>
+
+    <!-- Hamburger Menu-->
+            <button type="button" class="hamburger" id="menu-btn">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+            </button>
+        </div> 
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="school.html">入塾案内</a></li>
+            <li><a href="grad.html">進学実績</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="map.html">アクセス</a></li>
+            <li><a href="https://inouejuku81213.blog.fc2.com/" target="_blank">ブログ</a></li> 
+            <!-- ブログは別タブで直接開ける-->
+        </ul>
+        <div class="mobile-menu-bottom">
+            <div>
+                <img src="img/phone.svg" alt="tel">
+                <span><a href="tel:0774983835">0774-98-3835</a></span>
+            </div>
+            <div>
+                <img src="img/mail.svg" alt="mail">
+                <a href="mailto: inouejuku81213@gmail.com">inouejuku81213@gmail.com</a>
+            </div>
+        </div>    
+    </div>
+<section>
+<div class="access">
+<!-- Box A-->
+    <div class="box">
+        <div>
+            <h2>アクセス方法</h2>
+        </div>
+        <div class="full_access">
+            <div>
+                <h3>住所</h3>
+                <a href="https://goo.gl/maps/KUXmSyC57BwpBQ3d6" target="_blank">〒619-0237 <br>京都府相楽郡精華町光台８丁目１２−１３</a>
+            </div>
+            <div>
+                <img src="./img/owl.jpg" alt="">
+            </div>
+            <div>
+                <img src="./img/owl.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+<!-- Box B-->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6556.981712971628!2d135.7481178!3d34.743226!3m2!1i1024!2i768!4f10!3m3!1m2!1s0x0%3A0xdb32da10c55b5af5!2z5LqV5LiK5aG-!5e0!3m2!1sja!2sjp!4v1670514369875!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+</div>
+
+<div class="return">
+    <a href="#">ページ上部に戻る</a>
+</div>
+
+<div class="divider"></div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="contacts">
+            <img src="img/phone.svg" alt="tel">
+            <a href="tel:0774983835">0774-98-3835</a>
+            <img src="img/mail.svg" alt="mail">
+            <a href="mailto: inouejuku81213@gmail.com">inouejuku81213@gmail.com</a>
+        </div>
+        <p>Copyright &copy; 2002-<script>document.write( new Date().getFullYear() );</script>  井上塾. All rights reserved.</p>
+    </div>
+</section>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--自作のJS-->
+<script src="script.js"></script>
+
+</body>
+</html>
