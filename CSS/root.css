@@ -247,7 +247,7 @@ section {
 /* Mobile Menu */
 .mobile-menu {
     position: fixed;
-    top: 64px;
+    top: 60px;
     right: 0;
     background-color: #fff;
     color: #000;
