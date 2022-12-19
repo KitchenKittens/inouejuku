@@ -135,7 +135,6 @@
 
 .register {
     display: grid;
-    justify-content: center;
 }
 
 .form {
@@ -149,7 +148,8 @@
 /* 講師自己紹介 */
 .teachers {
     margin: 0 5%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     gap: 24px;
 }
@@ -185,6 +185,14 @@
     border: 3px solid var(--color-extra2);
 }
 
-.introduction img {
-    border-radius: 50%; 
+.names img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-extra2);
+}
+
+.class-photo {
+    height: 50%;
 }

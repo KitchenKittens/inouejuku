@@ -31,21 +31,28 @@ iframe {
     order: 1;
 }
 
-/*
-.parents p {
-    center;
-}
-*/
-
 .links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
+    justify-items: center;
     align-items: center;
 }
 
 .links img {
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    height: 300px;
-    width: 300px;
+    object-fit: cover;
+}
+
+#Tanuki {
+    object-position: 90% 50%;
+}
+
+.text-links {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    text-align: center;
 }

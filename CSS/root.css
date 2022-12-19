@@ -166,7 +166,7 @@ section a {
 #Welcome{
     scroll-margin-top: 70px;
 }
-#Describe, #Parents, #Course, #Entry, #Teacher {
+#Describe, #Parents, #Course, #Entry, #Teacher, #Form {
     scroll-margin-top: 80px;
 }
 
