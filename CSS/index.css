@@ -36,6 +36,8 @@ iframe {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .links img {
@@ -43,6 +45,12 @@ iframe {
     width: 200px;
     border-radius: 50%;
     object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.links img:hover {
+    transform: scale(0.9);
+    transition: transform 0.5s ease;
 }
 
 #Tanuki {
