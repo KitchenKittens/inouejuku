@@ -27,6 +27,10 @@ iframe {
     padding: 20px;
 }
 
+.description span {
+    font-style: italic;
+}
+
 .reversed {
     order: 1;
 }

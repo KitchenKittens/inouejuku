@@ -100,7 +100,7 @@ section a {
     margin: 0 10px;
     padding: 5px 15px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     background:#fff;
     position:relative;
     cursor:pointer;
@@ -143,7 +143,7 @@ section a {
     z-index: 10;
     width: 160%;
     left: 50%;
-    transform: translate(-50%, 4%);
+    transform: translate(-50%, 3%);
     text-align: center;
 }
 .navigation li:hover .dropdown{
@@ -204,7 +204,6 @@ section a {
 section {
     margin-top: 6%;
 }
-
 
 /* Hamburger Menu Icon */
 .hamburger {
