@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/sanitize.css">
+    <link rel="stylesheet" href="./CSS/root.css">
+    <link rel="stylesheet" href="./CSS/school.css">
+    <title>入塾案内</title>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div id="navbar-container"></div>
+
+<section>
+<!-- Box A -->
+    <div class="box course-info" id="Course">
+        <div class="course-title">
+        <h2>
+            コース紹介
+        </h2>
+        <div class="scenes">
+            <div><img src="./img/teaching.jpg" alt="集団授業" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
+            <div><img src="./img/takingnotes2.jpg" alt="集団授業" onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
+            <div><img src="./img/teacher.jpg" alt="集団授業" onclick="openModal();currentSlide(3)" class="hover-shadow"></div>
+            <div><img src="./img/whiteboard.jpg" alt="集団授業" onclick="openModal();currentSlide(4)" class="hover-shadow"></div>
+        </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <img src="./img/teaching.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="./img/takingnotes2.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="./img/teacher.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="./img/whiteboard.jpg">
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+        <div>
+            <h3>
+                集団授業コース
+            </h3>
+            <p>
+                京都府には五ツ木偏差値60～65の範囲に入る公立高校がほとんどありません。<br>だからといって、無茶な勉強をして届いたとしても、進学後に不安を残します。<br>卒業生たちの進路はさまざまですが、夢や幸せに向かって進む彼らの姿を見ていると、どこの高校に進んだのかは、それほど重要ではない。その思いは年々強くなります。<br>大事なことは、少しでも上に行くことではなく、目指す過程で、見て、学び、得たものです。<br>授業で学び、自習で身につけ、余力を残して進学する。これを指導の要としています。
+            </p>
+                <div class="group-btns">
+                    <button onclick="location.href='course-info.html#grad1-3'">中1～３年生対象</button>
+                    <button onclick="location.href='course-info.html#nankan'">難関高校受験指導</button>
+                    <button onclick="location.href='course-info.html#1class'">一学年一クラス</button>
+                    <button onclick="location.href='course-info.html#tesuto'">定期テスト対策</button>
+                    <button onclick="location.href='course-info.html#goodexp'">良い成績は良い解説から</button>
+                    <button onclick="location.href='course-info.html#check'">チェックをつけて繰り返す</button>
+                    <button onclick="location.href='course-info.html#howtousetime'">中1中2で時間の使い方を</button>
+                    <button onclick="location.href='course-info.html#afterex'">中3の秋、部活動引退後にめざましく伸びる</button>
+                    <button onclick="location.href='course-info.html#effort'">ひたむきな努力はきっと実を結ぶ</button>
+                </div>
+        </div>
+        
+        <br>
+
+        <div>
+            <h3>
+                個別指導コース
+            </h3>
+            <p>
+                [作成中]
+            </p>
+                
+        </div>
+
+        <br>
+
+        <div>
+            <h3>
+                自習サポートコース
+            </h3>
+            <p>
+                [作成中]
+            </p>
+        </div>
+
+
+    </div>
+    
+<!-- Box B-->
+    <div class="box register" id="Entry">
+        <div class="sub">
+            <h2>入塾までの流れ</h2>
+        </div>
+
+        <div class="info">
+            <img src="" alt="">
+            <p>作成中</p>
+        </div>
+        
+        <div class="form">
+            <a href="contact.html#Form">お問い合わせはこちら</a>
+        </div>
+
+    </div>
+    
+<!-- Box C-->
+    <div class="box teachers" id="Teacher">
+        <div class="introduction">
+            <div class="names">
+                <img src="./img/tomato.jpg" alt="アイコン">
+                <h3>講師 作成中</h3>
+            </div>
+            <div>
+                <p style="text-align:center">
+                    [自己紹介文 作成中・・・]
+                </p>
+            </div>
+        </div>
+        <div class="class-photo">
+            <img src="./img/yosegaki.jpg">
+        </div>
+    </div>
+
+</section>
+
+<div id="footer-container"></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Load Navigation
+        fetch("navigation.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar-container").innerHTML = data;
+        });
+
+        // Load Footer
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-container").innerHTML = data;
+            loadScripts(); //Load script.js after navigation is inserted
+        });
+
+        function loadScripts() {
+            const script = document.createElement("script");
+            script.src = "script.js";
+            script.defer = true; //Ensures script runs after HTML loads
+            document.body.appendChild(script);
+        }
+    });
+</script>
+
+<!-- Move jQuery before using it -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+</body>
+</html>
