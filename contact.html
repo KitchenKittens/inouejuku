@@ -9,83 +9,9 @@
     <link rel="stylesheet" href="./CSS/contact.css">
     <title>お問い合わせ</title>
 </head>
-  <body>
+<body>
     <!--Navigation Bar-->
-    <nav class="navbar">
-        <div class="navbar-container">        
-            <div class="navbar-logo">
-                <a href="index.html">
-                    <img src="img/owl.jpg" alt="Logo">
-                </a>
-            </div>
-            
-            <ul class="navigation">
-                <li><a href="index.html">ホーム</a>
-                    <div class="dropdown">
-                        <div class="dd">
-                        <a href="index.html#Welcome" class="dd=list">ようこそ</a>
-                        <a href="index.html#Describe" class="dd=list">「芯を作る」</a>
-                        <a href="index.html#Parents" class="dd=list">保護者の方へ</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="school.html">入塾案内</a>
-                    <div class="dropdown">
-                        <div class="dd">
-                        <a href="school.html#Course">コース紹介</a>
-                        <a href="course-info.html">コース詳細</a>
-                        <a href="school.html#Entry">入塾までの流れ</a>
-                        <a href="school.html#Teacher">講師紹介</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="grad.html">進学実績</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-                <li><a href="map.html">アクセス</a></li>
-                <li><a href="https://inouejuku81213.blog.fc2.com/" target="_blank">ブログ</a></li> 
-                <!-- ブログは別タブで直接開ける-->
-            </ul>
-       
-            <div class="tel">
-                <li class="telephone">
-                    <a href="tel:0774983835"><img src="img/phone.svg" alt="tel">0774-98-3835</a>
-                </li>
-                <li class="email">
-                    <a href="mailto: inouejuku81213@gmail.com"><img src="img/mail.svg" alt="mail">inouejuku81213@gmail.com</a>
-                </li>
-            </div>
-
-    <!-- Hamburger Menu-->
-            <button type="button" class="hamburger" id="menu-btn">
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-            </button>
-        </div> 
-    </nav>
-    
-    <!-- Mobile Menu -->
-    <div class="mobile-menu hidden" id="menu">
-        <ul>
-            <li><a href="index.html">ホーム</a></li>
-            <li><a href="school.html">入塾案内</a></li>
-            <li><a href="grad.html">進学実績</a></li>
-            <li><a href="contact.html">お問い合わせ</a></li>
-            <li><a href="map.html">アクセス</a></li>
-            <li><a href="https://inouejuku81213.blog.fc2.com/" target="_blank">ブログ</a></li> 
-            <!-- ブログは別タブで直接開ける-->
-        </ul>
-        <div class="mobile-menu-bottom">
-            <div>
-                <img src="img/phone.svg" alt="tel">
-                <span><a href="tel:0774983835">0774-98-3835</a></span>
-            </div>
-            <div>
-                <img src="img/mail.svg" alt="mail">
-                <a href="mailto: inouejuku81213@gmail.com">inouejuku81213@gmail.com</a>
-            </div>
-        </div>    
-    </div>
+    <div id="navbar-container"></div>
 <section>
 <!-- Box A-->
     <div class="box">
@@ -146,27 +72,35 @@
     </div>
 </section>
 
-<div class="return">
-    <a href="#l">ページ上部に戻る</a>
-</div>
+<div id="footer-container"></div>
 
-<div class="divider"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Load Navigation
+        fetch("navigation.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar-container").innerHTML = data;
+        });
 
-<footer class="footer">
-    <div class="footer-container">
-        <div class="contacts">
-            <img src="img/phone.svg" alt="tel">
-            <a href="tel:0774983835">0774-98-3835</a>
-            <img src="img/mail.svg" alt="mail">
-            <a href="mailto: inouejuku81213@gmail.com">inouejuku81213@gmail.com</a>
-        </div>
-        <p>Copyright &copy; 2002-<script>document.write( new Date().getFullYear() );</script>  井上塾. All rights reserved.</p>
-    </div>
-</footer>
+        // Load Footer
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-container").innerHTML = data;
+            loadScripts(); //Load script.js after navigation is inserted
+        });
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<!--自作のJS-->
-<script src="script.js"></script>
+        function loadScripts() {
+            const script = document.createElement("script");
+            script.src = "script.js";
+            script.defer = true; //Ensures script runs after HTML loads
+            document.body.appendChild(script);
+        }
+    });
+</script>
 
+<!-- Move jQuery before using it -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
 </body>
 </html>

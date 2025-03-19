@@ -1,14 +1,15 @@
-const btn = document.getElementById('menu-btn')
+document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById('menu-btn')
+    const nav = document.getElementById('menu')
 
-const nav = document.getElementById('menu')
+    function navToggle() {
+        btn.classList.toggle('open')
+        nav.classList.toggle('hidden')
+        document.body.classList.toggle('no-scroll')
+    }
 
-function navToggle() {
-    btn.classList.toggle('open')
-    nav.classList.toggle('hidden')
-    document.body.classList.toggle('no-scroll')
-}
-
-btn.addEventListener('click', navToggle)
+    btn.addEventListener('click', navToggle)
+});
 
 /* Navbar固定 */
 var _window = $(window), _nav = $('.navbar'), navBottom;
@@ -28,14 +29,13 @@ _window.trigger('scroll');
 function openModal() {
     document.getElementById("myModal").style.display = "block";
     $("body").addClass("modal-open");
-}
-  
+}  
 // Close the Modal
 function closeModal() {
     document.getElementById("myModal").style.display = "none";
     $("body").removeClass("modal-open");
 }
-  
+
 var slideIndex = 1;
 showSlides(slideIndex);
   
@@ -43,7 +43,6 @@ showSlides(slideIndex);
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
