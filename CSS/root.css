@@ -51,9 +51,10 @@ section a {
 /* Navbar */
 .navbar {
     width: 100%;
-    height: 12%;
+    height: auto;
     background-color: rgba(255,255,255,1);
     padding: 10px;
+    margin-bottom: 20px;
     box-shadow: 0 1px 3px rgb(0 0 0 /10%), 0 2px 2px rgb(0 0 0 /6%), 0 0 2px rgb(0 0 0 /7%);
     position: absolute;
     top: 0;
@@ -169,10 +170,8 @@ section a {
 .dd a:hover {
     background-color: var(--color-primary);
 }
-#Welcome{
-    scroll-margin-top: 70px;
-}
-#Describe, #Parents, #Course, #Entry, #Teacher, #Form {
+
+#Welcome, #Describe, #Parents, #Course, #Entry, #Teacher, #Form, #Group, #Solo, #Study_support{
     scroll-margin-top: 80px;
 }
 
@@ -404,11 +403,6 @@ section {
 
 /* Media Query */
 @media(min-width: 1440px) {
-    .box {
-        max-width: 1440px;
-        margin-right: auto;
-        margin-left: auto;
-    }
     .divider {
         max-width: 90%;
     }

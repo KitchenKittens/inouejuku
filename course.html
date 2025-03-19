@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/sanitize.css">
     <link rel="stylesheet" href="./CSS/root.css">
-    <link rel="stylesheet" href="./CSS/school.css">
-    <title>入塾案内</title>
+    <link rel="stylesheet" href="./CSS/course.css">
+    <title>コース説明</title>
 </head>
 <body>
     <!--Navigation Bar-->
     <div id="navbar-container"></div>
 
 <section>
-<!-- Box A -->
-    <div class="box course-info" id="Course">
-        <div class="course-title">
-        <h2>
-            コース紹介
-        </h2>
+
+    <div id="Course">
+        <h2>コース紹介 </h2>
+        <p>
+            京都府には五ツ木偏差値60～65の範囲に入る公立高校がほとんどありません。<br>だからといって、無茶な勉強をして届いたとしても、進学後に不安を残します。<br>卒業生たちの進路はさまざまですが、夢や幸せに向かって進む彼らの姿を見ていると、どこの高校に進んだのかは、それほど重要ではない。<br>その思いは年々強くなります。<br>大事なことは、少しでも上に行くことではなく、目指す過程で、見て、学び、得たものです。<br>授業で学び、自習で身につけ、余力を残して進学する。これを指導の要としています。
+        </p>
+        
         <div class="scenes">
             <div><img src="./img/teaching.jpg" alt="集団授業" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
             <div><img src="./img/takingnotes2.jpg" alt="集団授業" onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
@@ -27,108 +28,79 @@
             <div><img src="./img/whiteboard.jpg" alt="集団授業" onclick="openModal();currentSlide(4)" class="hover-shadow"></div>
         </div>
 
-            <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-                    <div class="mySlides">
-                        <img src="./img/teaching.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img src="./img/takingnotes2.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img src="./img/teacher.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img src="./img/whiteboard.jpg">
-                    </div>
+        <div id="myModal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img src="./img/teaching.jpg">
                 </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-        </div>
-
-        <div>
-            <h3>
-                集団授業コース
-            </h3>
-            <p>
-                京都府には五ツ木偏差値60～65の範囲に入る公立高校がほとんどありません。<br>だからといって、無茶な勉強をして届いたとしても、進学後に不安を残します。<br>卒業生たちの進路はさまざまですが、夢や幸せに向かって進む彼らの姿を見ていると、どこの高校に進んだのかは、それほど重要ではない。その思いは年々強くなります。<br>大事なことは、少しでも上に行くことではなく、目指す過程で、見て、学び、得たものです。<br>授業で学び、自習で身につけ、余力を残して進学する。これを指導の要としています。
-            </p>
-                <div class="group-btns">
-                    <button onclick="location.href='course-info.html#grad1-3'">中1～３年生対象</button>
-                    <button onclick="location.href='course-info.html#nankan'">難関高校受験指導</button>
-                    <button onclick="location.href='course-info.html#1class'">一学年一クラス</button>
-                    <button onclick="location.href='course-info.html#tesuto'">定期テスト対策</button>
-                    <button onclick="location.href='course-info.html#goodexp'">良い成績は良い解説から</button>
-                    <button onclick="location.href='course-info.html#check'">チェックをつけて繰り返す</button>
-                    <button onclick="location.href='course-info.html#howtousetime'">中1中2で時間の使い方を</button>
-                    <button onclick="location.href='course-info.html#afterex'">中3の秋、部活動引退後にめざましく伸びる</button>
-                    <button onclick="location.href='course-info.html#effort'">ひたむきな努力はきっと実を結ぶ</button>
+                <div class="mySlides">
+                    <img src="./img/takingnotes2.jpg">
                 </div>
-        </div>
-        
-        <br>
-
-        <div>
-            <h3>
-                個別指導コース
-            </h3>
-            <p>
-                [作成中]
-            </p>
-                
-        </div>
-
-        <br>
-
-        <div>
-            <h3>
-                自習サポートコース
-            </h3>
-            <p>
-                [作成中]
-            </p>
-        </div>
-
-
-    </div>
-    
-<!-- Box B-->
-    <div class="box register" id="Entry">
-        <div class="sub">
-            <h2>入塾までの流れ</h2>
-        </div>
-
-        <div class="info">
-            <img src="" alt="">
-            <p>作成中</p>
-        </div>
-        
-        <div class="form">
-            <a href="contact.html#Form">お問い合わせはこちら</a>
-        </div>
-
-    </div>
-    
-<!-- Box C-->
-    <div class="box teachers" id="Teacher">
-        <div class="introduction">
-            <div class="names">
-                <img src="./img/tomato.jpg" alt="アイコン">
-                <h3>講師 作成中</h3>
+                <div class="mySlides">
+                    <img src="./img/teacher.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="./img/whiteboard.jpg">
+                </div>
             </div>
-            <div>
-                <p style="text-align:center">
-                    [自己紹介文 作成中・・・]
-                </p>
-            </div>
-        </div>
-        <div class="class-photo">
-            <img src="./img/yosegaki.jpg">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </div>
 
+    <div class="box" id="Group">
+        <h3>
+            集団授業コース（中学部）
+        </h3>
+        <div class="group-btns">
+            <button onclick="location.href='course-info.html#grad1-3'">復習重視の勉強法 試行錯誤で能力育成</button>
+            <button onclick="location.href='course-info.html#nankan'">５科目指導 各学年１クラスのみ 定期テスト対策</button>
+            <button onclick="location.href='course-info.html#1class'">入塾の目安</button>
+            <button onclick="location.href='course-info.html#tesuto'">理数教育に特徴あり 女子の理系進学率が高い</button>
+            <button onclick="location.href='course-info.html#goodexp'">進学実績 第一志望合格率 直近５年連続100％</button>
+            <button onclick="location.href='course-info.html#check'">大学進学状況</button>
+            <button onclick="location.href='course-info.html#howtousetime'">中1中2で時間の使い方を</button>
+            <button onclick="location.href='course-info.html#afterex'">保護者とのつながり</button>
+        </div>
+    </div>
+    <div class="box">
+        <h3>
+            集団授業コース（小学部）
+        </h3>
+        <div class="group-btns">
+            <button onclick="location.href='course-info.html#grad1-3'">基礎学力の養成 ＋ ちょっぴり試行錯誤</button>
+            <button onclick="location.href='course-info.html#nankan'">入塾の目安</button>
+            <button onclick="location.href='course-info.html#1class'">保護者とのつながり</button>
+        </div>
+    </div>
+
+    <div class="box" id="Solo">
+        <h3>
+            個別指導コース
+        </h3>
+        <div class="group-btns">
+            <button onclick="location.href='course-info.html#grad1-3'">対象は中学生以上</button>
+            <button onclick="location.href='course-info.html#nankan'">保護者とのつながり</button>
+            <button onclick="location.href='course-info.html#1class'">利用実績</button>
+            <button onclick="location.href='course-info.html#tesuto'">進学実績</button>
+        </div>
+    </div>
+
+    <div class="box" id="Study_support">
+        <h3>
+            自習サポートコース
+        </h3>
+        <div class="group-btns">
+            <button onclick="location.href='course-info.html#grad1-3'">対象は中学生以上 自習でがんばる人の物心両面を支援します</button>
+            <button onclick="location.href='course-info.html#nankan'">利用可能時間/料金</button>
+            <button onclick="location.href='course-info.html#1class'">自習でがんばる中学生を全力でサポート！</button>
+            <button onclick="location.href='course-info.html#tesuto'">質問対応セット</button>
+            <button onclick="location.href='course-info.html#goodexp'">保護者とのつながり</button>
+            <button onclick="location.href='course-info.html#check'">利用実績</button>
+            <button onclick="location.href='course-info.html#howtousetime'">進学実績</button>
+        </div>
+    </div>
 </section>
 
 <div id="footer-container"></div>
