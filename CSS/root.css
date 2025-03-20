@@ -171,7 +171,7 @@ section a {
     background-color: var(--color-primary);
 }
 
-#Welcome, #Describe, #Parents, #Course, #Entry, #Teacher, #Form, #Group, #Solo, #Study_support{
+#Welcome, #Describe, #Parents, #Course, #Entry, #Fees, #Teacher, #Form, #Group, #Solo, #Study_support, #Group_results, #Solo_results, #Examples{
     scroll-margin-top: 80px;
 }
 

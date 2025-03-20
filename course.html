@@ -16,7 +16,7 @@
 <section>
 
     <div id="Course">
-        <h2>コース紹介 </h2>
+        <h1>コース紹介</h1>
         <p>
             京都府には五ツ木偏差値60～65の範囲に入る公立高校がほとんどありません。<br>だからといって、無茶な勉強をして届いたとしても、進学後に不安を残します。<br>卒業生たちの進路はさまざまですが、夢や幸せに向かって進む彼らの姿を見ていると、どこの高校に進んだのかは、それほど重要ではない。<br>その思いは年々強くなります。<br>大事なことは、少しでも上に行くことではなく、目指す過程で、見て、学び、得たものです。<br>授業で学び、自習で身につけ、余力を残して進学する。これを指導の要としています。
         </p>
@@ -50,9 +50,9 @@
     </div>
 
     <div class="box" id="Group">
-        <h3>
+        <h2>
             集団授業コース（中学部）
-        </h3>
+        </h2>
         <div class="group-btns">
             <button onclick="location.href='course-info.html#grad1-3'">復習重視の勉強法 試行錯誤で能力育成</button>
             <button onclick="location.href='course-info.html#nankan'">５科目指導 各学年１クラスのみ 定期テスト対策</button>
@@ -65,9 +65,9 @@
         </div>
     </div>
     <div class="box">
-        <h3>
+        <h2>
             集団授業コース（小学部）
-        </h3>
+        </h2>
         <div class="group-btns">
             <button onclick="location.href='course-info.html#grad1-3'">基礎学力の養成 ＋ ちょっぴり試行錯誤</button>
             <button onclick="location.href='course-info.html#nankan'">入塾の目安</button>
@@ -76,9 +76,9 @@
     </div>
 
     <div class="box" id="Solo">
-        <h3>
+        <h2>
             個別指導コース
-        </h3>
+        </h2>
         <div class="group-btns">
             <button onclick="location.href='course-info.html#grad1-3'">対象は中学生以上</button>
             <button onclick="location.href='course-info.html#nankan'">保護者とのつながり</button>
@@ -88,9 +88,9 @@
     </div>
 
     <div class="box" id="Study_support">
-        <h3>
+        <h2>
             自習サポートコース
-        </h3>
+        </h2>
         <div class="group-btns">
             <button onclick="location.href='course-info.html#grad1-3'">対象は中学生以上 自習でがんばる人の物心両面を支援します</button>
             <button onclick="location.href='course-info.html#nankan'">利用可能時間/料金</button>
@@ -101,7 +101,15 @@
             <button onclick="location.href='course-info.html#howtousetime'">進学実績</button>
         </div>
     </div>
+
+    <div id="textModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTextModal()">&times;</span>
+            <p id="modalText"></p>
+        </div>
+    </div>
 </section>
+
 
 <div id="footer-container"></div>
 
@@ -129,6 +137,15 @@
             document.body.appendChild(script);
         }
     });
+
+    function openTextModal(text) {
+        document.getElementById("modalText").innerHTML = text;
+        document.getElementById("textModal").style.display = "flex";
+    }
+
+    function closeTextModal() {
+        document.getElementById("textModal").style.display = "none";
+    }
 </script>
 
 <!-- Move jQuery before using it -->

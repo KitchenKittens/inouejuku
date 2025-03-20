@@ -1,6 +1,90 @@
 #Results {
-    padding: 40px;
+    padding: 2px;
     margin:1.5% 5%;
     border-radius: 10px;
     text-align: center;
+}
+
+/* 進学実績レイアウト */
+.results-grid {
+    display: grid;
+    grid-template-columns: auto 40px auto; /* 画像➡画像 */
+    grid-template-rows: auto auto; /* 高さを自動調整 */
+    gap: 10px; /* 要素間の余白 */
+    align-items: center; /* 垂直方向中央揃え */
+    justify-content: center;
+}
+
+.results-grid img {
+    width: 100%; /* 画像サイズ調整 */
+    max-width: 300px; /* 必要に応じて変更 */
+}
+
+.results-grid p.arrow {
+    font-size: 2rem; /* 矢印サイズ */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 3枚目の画像を2列分の幅に */
+.results-grid img:nth-child(4) {
+    grid-column: span 3; /* 3列の幅を占める */
+    justify-self: center; /* 水平方向に中央配置 */
+    width: 60%; /* 画像サイズ調整 */
+}
+
+/* 個別指導コース */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.results-table th, 
+.results-table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #000;
+}
+.results-table th{
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.results-table th:nth-child(2),
+.results-table td:nth-child(2){
+    width: 25%;
+}
+
+.note {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: right;
+}
+
+/*利用例*/
+.student-voices {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.student-example {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid var(--color-extra2);
+    border-radius: 8px;
+}
+
+.student-example h3 {
+    margin: 0;
+    font-size: medium;
+    color: var(--color-extra2);
+}
+
+.student-example p {
+    margin: 5px 0 0;
+    font-size: small;
+    line-height: 1.6;
 }
