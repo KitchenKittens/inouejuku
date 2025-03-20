@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 var _window = $(window), _nav = $('.navbar'), navBottom;
 
 _window.on('scroll',function(){
-    navBottom = $('.navbar').outerHeight() + 60;
+    navBottom = $('.navbar').outerHeight()
     if(_window.scrollTop() > navBottom){
         _nav.addClass('fixed');
     }
