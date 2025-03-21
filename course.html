@@ -54,24 +54,89 @@
             集団授業コース（中学部）
         </h2>
         <div class="group-btns">
-            <button onclick="location.href='course-info.html#grad1-3'">復習重視の勉強法 試行錯誤で能力育成</button>
-            <button onclick="location.href='course-info.html#nankan'">５科目指導 各学年１クラスのみ 定期テスト対策</button>
-            <button onclick="location.href='course-info.html#1class'">入塾の目安</button>
-            <button onclick="location.href='course-info.html#tesuto'">理数教育に特徴あり 女子の理系進学率が高い</button>
-            <button onclick="location.href='course-info.html#goodexp'">進学実績 第一志望合格率 直近５年連続100％</button>
-            <button onclick="location.href='course-info.html#check'">大学進学状況</button>
-            <button onclick="location.href='course-info.html#howtousetime'">中1中2で時間の使い方を</button>
-            <button onclick="location.href='course-info.html#afterex'">保護者とのつながり</button>
+            <button onclick="openTextModal('group_desc1')">復習重視の勉強法 試行錯誤で能力育成</button>
+            <button onclick="openTextModal('group_desc2')">５科目指導 各学年１クラスのみ 定期テスト対策</button>
+            <button onclick="openTextModal('group_desc3')">入塾の目安</button>
+            <button onclick="openTextModal('group_desc4')">理数教育に特徴あり 女子の理系進学率が高い</button>
+            <button onclick="openTextModal('group_desc5')">進学実績 第一志望合格率 直近5年連続100%</button>
+            <button onclick="openTextModal('group_desc6')">大学進学状況</button>
+            <button onclick="openTextModal('group_desc7')">保護者とのつながり</button>
         </div>
+        <div>
+            <!-- Descriptions (Hidden) -->
+            <ul id="group_desc1" class="description">
+                <li>復習重視型の勉強法を教え、自己管理を含めた能力の育成に努めます。</li>
+                <li>何をいつどれくらい復習すればよいか試行錯誤して習得します。</li>
+                <li>目的意識をもって井上塾を利用してもらえると大変ありがたいです。</li>
+                <li>ただし、どんな塾もあまり長くいるところではないと思います。</li>
+                <li>必要なことを中学卒業までに伝えきる。それを目標にしています。</li>
+            </ul>
+            <ul id="group_desc2" class="description">
+                <li>定期テスト５科目４４０点前後の生徒がコア層ですが、はじめからよくできる生徒ばかりではありません。中１ 一学期の成績は偏差値５０台の生徒が多いです。 （図１）</li>
+                <li>数学（１０．６上昇）、国語（８．８上昇）が特に良く伸びます。 （図１）</li>
+                <li>クラス分けがなく、授業内容が合わないと苦労します。</li>
+                <li>定期テスト対策は全科目。過去問配布と確認テスト以外は各自が試行錯誤します。</li>
+                <li>豊富な模擬テスト演習（中３）。 合格判定の精度が高く、復習して力がつきます。</li>
+            </ul>
+            <ul id="group_desc3" class="description">
+                <li>塾経験の長い人は定期テスト５科目４４０点前後を目安にしてください。</li>
+                <li>塾経験のない人は４００点前後から入塾後に伸びていった人は多いです。</li>
+                <li>新中１生は小学校の勉強で特に困ったことがなければまず大丈夫。</li>
+                <li>授業体験してから入塾テストに進むとよいかもしれません。</li>
+            </ul>
+            <ul id="group_desc4" class="description">
+                <li>理屈からきちんと教えます。わかるまで何度も読んでください、質問してください。<br>そして、復習重視で力をつけていきます。今後できるだけ塾や予備校にたよらず自習でやっていくつもりなら、そうしていかないと通用しなくなる科目です。
+               </li>
+                <li>卒業生の理系大学進学率は比較的高く、女子は世間一般より相当高いです。<br>京大に進学したある女子生徒は、ここで学んだ電気の勉強がきっかけで物理の面白さにめざめ、物理工学科に決めたそうです。<br>私が京大農学部中退のせいか、農学部に進む生徒は比較的多いです。数学を武器に経済学部へ進んだ人は何人もいます。
+                </li>
+                <li>理数系は教え方や学び方のちがいが伸び方に大きく影響します。理数系だけ何とかしたい人、今の勉強法を見直したい人は、一度井上塾の個別指導を使ってみるとよいかもしれません。
+               </li>
+            </ul>
+            <ul id="group_desc5" class="description">
+               <li>２０１７～２０２０は図２の通りです。</li>
+               <li>体制が変わってからの卒業生（２０２１～２０２４）も同様です。</li>
+               <li>特待合格率  直近４年連続１００％ （６人が受験 → 全特２ 半特４）</li>
+            </ul>
+            <ul id="group_desc6" class="description">
+                <li>同・立系や高専進学者を除く１３名中１０名が国公立大学に進学。一般入試を経て国公立大学へ進学した人の割合が大きいです。
+                </li>
+                <li>卒業生を直接教えたわけではありませんが、ここで習得した復習重視型の勉強法を続けていった人は多いです。（卒業生からの聴き取り）
+               </li>
+            </ul>
+            <ul id="group_desc7" class="description">
+                <li>定期的な懇談に限らず、ラインなどを通じて教育に関するご相談をお受けします。</li>
+            </ul>
+        </div>
+
     </div>
     <div class="box">
         <h2>
             集団授業コース（小学部）
         </h2>
         <div class="group-btns">
-            <button onclick="location.href='course-info.html#grad1-3'">基礎学力の養成 ＋ ちょっぴり試行錯誤</button>
-            <button onclick="location.href='course-info.html#nankan'">入塾の目安</button>
-            <button onclick="location.href='course-info.html#1class'">保護者とのつながり</button>
+            <button onclick="openTextModal('elem_desc1')">基礎学力の養成 + ちょっぴり試行錯誤</button>
+            <button onclick="openTextModal('elem_desc2')">入塾の目安</button>
+            <button onclick="openTextModal('elem_desc3')">保護者とのつながり</button>
+        </div>
+        <div>
+            <ul class="description" id="elem_desc1">
+                <li>地元公立中学に進学予定の小６生向けです。</li>
+                <li>国語と算数を中心に基礎学力の養成と、算数を使ってちょっぴり試行錯誤をはじめます。
+               </li>
+                <li>算数は、標準テキストで学んだ後で発展内容に入る２段階構成です。毎回計算の宿題が出ます。
+               </li>
+                <li>国語は、比較的記述の多いテキストを使います。毎回漢字のテストがあります。</li>
+                <li>小６英語にも対応します。 小６理科、社会はご相談ください。</li>
+                <li>１２月頃からは中１英数の先行授業が始まります。</li>
+            </ul>
+            <ul class="description" id="elem_desc2">
+                <li>小学校の勉強で特に困ったことがなければ大丈夫です。あまり苦手だと合わないかもしれません。まずは授業体験を。
+               </li>
+                <li>中１進級時には入塾テストがあります。</li>
+            </ul>
+            <ul class="description" id="elem_desc3">
+                <li>定期的な懇談に限らず、ラインなどを通じて教育に関するご相談をお受けします。</li>
+            </ul>
         </div>
     </div>
 
@@ -80,10 +145,35 @@
             個別指導コース
         </h2>
         <div class="group-btns">
-            <button onclick="location.href='course-info.html#grad1-3'">対象は中学生以上</button>
-            <button onclick="location.href='course-info.html#nankan'">保護者とのつながり</button>
-            <button onclick="location.href='course-info.html#1class'">利用実績</button>
-            <button onclick="location.href='course-info.html#tesuto'">進学実績</button>
+            <button onclick="openTextModal('solo_desc1')">対象は中学生以上</button>
+            <button onclick="openTextModal('solo_desc2')">保護者とのつながり</button>
+            <button onclick="openTextModal('solo_desc3')">利用実績</button>
+            <button onclick="openTextModal('solo_desc4')">進学実績</button>
+        </div>
+        <div>
+            <ul class="description" id="solo_desc1">
+                <li>得意科目から苦手科目まで幅広く対応できます。</li>
+                <li>対応可能科目 中学生…５教科 高校生以上…数学・物理・化学</li>
+                <li>日時・指導科目などをご相談ください。</li>
+                <li>自習サポートとの併用がおすすめです。自習サポートでは各種テスト、定期テスト対
+                    策などを利用できます。（中学生）
+               </li>
+                <li>２人以上の生徒を同時・同内容で指導する場合は、指導料が割安になります。</li>
+            </ul>
+            <ul class="description" id="solo_desc2">
+                <li>定期的な懇談に限らず、ラインなどを通じて教育に関するご相談をお受けします。</li>
+            </ul>
+            <ul class="description" id="solo_desc3">
+                <li>精華町・木津川市の公立中学生、奈良学園中、嵯峨野高、西京高、南陽高、平安女学院高、奈良学園高、奈良高専　等
+                </li>
+            </ul>
+            <ul class="description" id="solo_desc4">
+                <li>堀川、南陽、奈良高専、京都橘、京都廣学館、立命館大学、京都府立医大・医学科利用例など
+                </li>
+                <li>
+                    詳しくは <a href="result.html#Solo_results">こちら</a>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -92,22 +182,58 @@
             自習サポートコース
         </h2>
         <div class="group-btns">
-            <button onclick="location.href='course-info.html#grad1-3'">対象は中学生以上 自習でがんばる人の物心両面を支援します</button>
-            <button onclick="location.href='course-info.html#nankan'">利用可能時間/料金</button>
-            <button onclick="location.href='course-info.html#1class'">自習でがんばる中学生を全力でサポート！</button>
-            <button onclick="location.href='course-info.html#tesuto'">質問対応セット</button>
-            <button onclick="location.href='course-info.html#goodexp'">保護者とのつながり</button>
-            <button onclick="location.href='course-info.html#check'">利用実績</button>
-            <button onclick="location.href='course-info.html#howtousetime'">進学実績</button>
+            <button onclick="openTextModal('support_desc1')">対象は中学生以上 自習でがんばる人の物心両面を支援します</button>
+            <button onclick="openTextModal('support_desc2')">利用可能時間/料金</button>
+            <button onclick="openTextModal('support_desc3')">自習でがんばる中学生を全力でサポート！</button>
+            <button onclick="openTextModal('support_desc4')">質問対応セット</button>
+            <button onclick="openTextModal('support_desc5')">保護者とのつながり</button>
+            <button onclick="openTextModal('support_desc6')">利用実績</button>
+            <button onclick="openTextModal('support_desc7')">進学実績</button>
         </div>
     </div>
+    <div>
+        <ul class="description" id="support_desc1">
+            <li>中学生、高校生、高専生、既卒生、大学生など、学校の勉強や資格試験、就職・採用試験に向けての勉強にご利用いただけます。 短期間の利用も可能です。
+            </li>
+        </ul>
+        <ul class="description" id="support_desc2">
+            <li>月～土 １５時～２２時３０分 ※日祝の利用、午前中の利用も可能です</li>
+            <li>月10,000円（税込）　１か月単位でご利用できます。</li>
+        </ul>
+        <ul class="description" id="support_desc3">
+            <li>塾の教材、各種テストが利用できます。中３は模擬テスト演習＆解説が利用できます。（一部有料です）
+           </li>
+            <li>自宅学習に不足するテスト類を補って自習の成果を上げていこう！</li>
+            <li>定期テスト対策は集団授業コースと同じです。</li>
+            <li>復習重視型の自習のコツでよければ聞いてください。</li>
+        </ul>
+        <ul class="description" id="support_desc4">
+            <li>+2,000円（税込）で月3時間までの質問対応や指導が受けられます。</li>
+            <li>３時間を超えた分は原則別料金になります。</li>
+            <li>質問対応可能科目 中学生…５教科 高校生以上…数学・物理・化学</li>
+            <li>自宅などからLINEによる質問も可能です。</li>
+            <li>授業中などで質問に対応できない場合があります。</li>
+        </ul>
+        <ul class="description" id="support_desc5">
+            <li>定期的な懇談に限らず、ラインなどを通じて教育に関するご相談をお受けします。</li>
+        </ul>
+        <ul class="description" id="support_desc6">
+            <li>精華町・木津川市の公立中学生、奈良学園中、嵯峨野高、西京高、南陽高、平安女学院高、奈良学園高、奈良高専 等
+            </li>
+        </ul>
+        <ul class="description" id="support_desc7">
+            <li>堀川、南陽、奈良高専、京都橘、京都廣学館、立命館大学、京都府立医大・医学科</li>
+            <li>利用例など詳しくは <a href="school.html#Solo_results">こちら</a></li>
+        </ul>
+    </div>
 
-    <div id="textModal" class="modal">
-        <div class="modal-content">
+    <div id="textModal" class="text-modal">
+        <div class="text-modal-content">
             <span class="close" onclick="closeTextModal()">&times;</span>
             <p id="modalText"></p>
         </div>
     </div>
+    
 </section>
 
 
@@ -147,6 +273,8 @@
         document.getElementById("textModal").style.display = "none";
     }
 </script>
+
+<script src="course.js"></script>
 
 <!-- Move jQuery before using it -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
