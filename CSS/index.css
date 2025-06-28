@@ -1,28 +1,38 @@
 /* Contents */
 .title {
-    padding: 2px;
     text-align: center;
+    font-size:150%;
+    margin: 1.5%;
 }
 
 #Welcome, #Describe, #Parents{
-    padding: 40px;
+    padding: 20px;
     margin:1.5% 5%;
     border-radius: 10px;
     text-align: center;
 }
 
+h2{
+    font-size: 130%;
+}
+
+#Welcome p, #Describe p, #Parents p{
+    font-size: 120%;
+}
+
 #Describe span{
     margin: 2% 0% 2% 0%;
     font-style: italic;
+    font-size: 90%;
 }
 
 #Describe .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 3fr 2fr;
     justify-content: space-around;
     align-items: center;
     gap: 2em;
-    font-size: small;
+    font-size: 80%;
     text-align: justify;
     padding: 20px;
     margin: 2%;
@@ -40,8 +50,18 @@ iframe {
     height: 200px;
 }
 
-.reversed {
-    order: 1;
+.container.reversed {
+    grid-template-columns: 2fr 3fr; /* image 40%, text 60% */
+    direction: rtl; /* reverses the order */
+}
+
+.container.reversed > * {
+    direction: ltr; /* restores normal text direction */
+}
+
+.container p.bold {
+    font-size: 150% !important;
+    font-weight: bold;
 }
 
 .links {
