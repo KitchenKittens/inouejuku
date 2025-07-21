@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
         btn.classList.toggle('open')
         nav.classList.toggle('hidden')
         document.body.classList.toggle('no-scroll')
+        
+        // (Optional) Accessibility attribute toggle
+        const expanded = btn.classList.contains('open')
+        btn.setAttribute('aria-expanded', expanded)
     }
 
     btn.addEventListener('click', navToggle)
