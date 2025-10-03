@@ -121,29 +121,28 @@
 <div id="footer-container"></div>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Load Navigation
-        fetch("navigation.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("navbar-container").innerHTML = data;
-        });
-
-        // Load Footer
-        fetch("footer.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("footer-container").innerHTML = data;
-            loadScripts(); //Load script.js after navigation is inserted
-        });
-
-        function loadScripts() {
-            const script = document.createElement("script");
-            script.src = "script.js";
-            script.defer = true; //Ensures script runs after HTML loads
-            document.body.appendChild(script);
-        }
-    });
+document.addEventListener("DOMContentLoaded", function() {
+  // navigation と footer を両方フェッチしてからスクリプトをロード（確実）
+  Promise.all([
+    fetch("navigation.html").then(r => r.text()),
+    fetch("footer.html").then(r => r.text())
+  ]).then(([navHtml, footerHtml]) => {
+    document.getElementById("navbar-container").innerHTML = navHtml;
+    document.getElementById("footer-container").innerHTML = footerHtml;
+    
+    const footerYearEl = document.getElementById('footer-year') || document.getElementById('year');
+    if (footerYearEl) {
+    footerYearEl.textContent = new Date().getFullYear();
+    }
+    
+    // script 読み込み（navigation が DOM に入った後）
+    const script = document.createElement("script");
+    script.src = "./script.js";
+    document.body.appendChild(script);
+  }).catch(err => {
+    console.error('fetch error:', err);
+  });
+});
 </script>
 
 <!-- Move jQuery before using it -->

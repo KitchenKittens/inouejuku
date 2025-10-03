@@ -10,11 +10,13 @@
             <a href="tel:0774983835"><img src="./img/phone.svg" alt="tel">0774-98-3835</a>
             <a href="mailto: inouejuku81213@gmail.com"><img src="./img/mail.svg" alt="mail">inouejuku81213@gmail.com</a>
         </div>
-        <p>Copyright &copy; 2002-
-            <script>
-                document.write( new Date().getFullYear() );
-            </script>  
-        井上塾. All rights reserved.</p>
-
+        <p>Copyright © 2002-<span id="footer-year"></span> 井上塾. All rights reserved.</p>
     </div>
 </footer>
+
+<script>
+console.log('footer inline script executed');
+var el = document.getElementById('footer-year');
+console.log('found footer-year:', !!el);
+if (el) el.textContent = new Date().getFullYear();
+</script>
